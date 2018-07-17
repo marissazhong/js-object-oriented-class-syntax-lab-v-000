@@ -4,13 +4,13 @@ class BoardMember {
     this.homeState = homeState;
     this.training = training;
   }
-  veto() {console.log("No, I must disagree")};
-  approve() {console.log(`You can do that!`)};
-  doCharity() {console.log(`I like to help people.`)};
-  releasePressStatement() {console.log(`You will see great things from Scuber.`)};
-  sayHi() {console.log(`Hi, my name is ${this.name}. I am from ${this.homeState}, and I was trained in ${this.training}.`)};
+  veto() {return "No, I must disagree"};
+  approve() {return `You can do that!`};
+  doCharity() {return `I like to help people.`};
+  releasePressStatement() {return `You will see great things from Scuber.`};
+  sayHi() {return `Hi, my name is ${this.name}. I am from ${this.homeState}, and I was trained in ${this.training}.`};
 }
 
 class Ceo extends BoardMember {
-  hireEmployee() {console.log(`Welcome aboard!`)};
+  hireEmployee() {return `Welcome aboard!};
 }
